@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliyunTranslateDemo", "AliyunTranslateDemo\AliyunTranslateDemo.csproj", "{2F923D88-5867-41F2-8F5D-23C1E77E201E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliyunPackage", "AliyunPackage\AliyunPackage.csproj", "{8F780A57-E681-49ED-AFF7-8C5BFD616EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F923D88-5867-41F2-8F5D-23C1E77E201E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F923D88-5867-41F2-8F5D-23C1E77E201E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F923D88-5867-41F2-8F5D-23C1E77E201E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F923D88-5867-41F2-8F5D-23C1E77E201E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F780A57-E681-49ED-AFF7-8C5BFD616EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F780A57-E681-49ED-AFF7-8C5BFD616EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F780A57-E681-49ED-AFF7-8C5BFD616EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F780A57-E681-49ED-AFF7-8C5BFD616EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5777AFAF-3AAF-479F-A2F8-FFC42C914039}
+	EndGlobalSection
+EndGlobal
