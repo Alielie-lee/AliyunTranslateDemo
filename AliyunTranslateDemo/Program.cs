@@ -11,7 +11,7 @@ namespace XiaoniuTranslate
         [STAThread]
         static async Task Main(string[] args)
         {
-            //图像识别、翻译、文档之间转换（比如txt转word）、PDF可在线编辑、语音识别。如果上面这些小牛没有，就看下阿里云是否有。
+            //图像识别、翻译、文档之间转换（比如txt转word）、PDF可在线编辑、语音识别。
             ISample sample =
             new TranslateGeneralSample();//通用翻译
                                          //new DocTranslateSample();//文档翻译
