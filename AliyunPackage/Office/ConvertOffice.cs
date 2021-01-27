@@ -250,7 +250,7 @@ namespace AliyunPackage.Office
         /// <summary>
         /// 查询异步文档格式转换任务的状态信息
         /// </summary>
-        /// <param name="project">项目名称 从CreateOfficeConversionTask接口获取</param>
+        /// <param name="project">项目名称 从CreateOfficeConversionTask接口设置</param>
         /// <param name="taskId">任务id 从CreateOfficeConversionTask接口获取</param>
         /// <returns></returns>
         public async Task<GetOfficeConversionTaskResponse> GetOfficeConversionTask(string project, string taskId)
