@@ -21,7 +21,7 @@ namespace AliyunTranslateDemo.Sample
             var srcUri = Console.ReadLine();
             Console.WriteLine("请输入转换后输出内容的目标OSS位置");
             var tgtUri = Console.ReadLine();
-            var response = await client.CreateOfficeConversionTask(name, srcUri, tgtUri, "pdf");
+            var response = await client.CreateOfficeConversionTaskAsync(name, srcUri, tgtUri, "pdf");
             Console.WriteLine("TaskId：" + response.TaskId);
         }
         /// <summary>
@@ -29,7 +29,7 @@ namespace AliyunTranslateDemo.Sample
         /// </summary>
         public async Task<string> GetResult(string taskid, string name)
         {
-            var response = await client.GetOfficeConversionTask(name, taskid);
+            var response = await client.GetOfficeConversionTaskAsync(name, taskid);
             return response.TgtUri;
         }
     }

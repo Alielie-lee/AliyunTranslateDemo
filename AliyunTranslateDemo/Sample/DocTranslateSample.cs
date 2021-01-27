@@ -17,7 +17,7 @@ namespace AliyunTranslateDemo.Sample
             Console.WriteLine("-----------文档翻译示例------------");
             Console.WriteLine("请输入需要翻译的文档地址");
             var key = Console.ReadLine();
-            var response = await client.CreateDocTranslateTask(key);
+            var response = await client.CreateDocTranslateTaskAsync(key);
             Console.WriteLine("任务Id：" + response.TaskId);
 
         }
@@ -28,7 +28,7 @@ namespace AliyunTranslateDemo.Sample
         /// <returns></returns>
         public async Task<string> GetResult(string taskid)
         {
-            var response = await client.GetDocTranslateTask(taskid);
+            var response = await client.GetDocTranslateTaskAsync(taskid);
             return response.TranslateFileUrl;
         }
     }

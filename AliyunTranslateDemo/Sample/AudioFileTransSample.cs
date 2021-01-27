@@ -17,7 +17,7 @@ namespace AliyunTranslateDemo.Sample
             Console.WriteLine("-----------音频识别示例------------");
             Console.WriteLine("请输入音频地址");
             var url = Console.ReadLine();
-            var response = await client.CreateAudioFileTransTask(url);
+            var response = await client.CreateAudioFileTransTaskAsync(url);
             Console.WriteLine("结果json：" + response.Data);
         }
         /// <summary>
@@ -25,7 +25,7 @@ namespace AliyunTranslateDemo.Sample
         /// </summary>
         public async Task<string> GetResult(string taskid)
         {
-            var response = await client.GetAudioFileTransTask(taskid);
+            var response = await client.GetAudioFileTransTaskAsync(taskid);
             return response.Data;
         }
     }

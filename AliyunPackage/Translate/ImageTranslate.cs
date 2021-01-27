@@ -23,7 +23,7 @@ namespace AliyunPackage.Translate
         /// <param name="targetLanguage">译文语言</param>
         /// <param name="extra"></param>
         /// <returns></returns>
-        public async Task<GetImageTranslateResponse> GetImageTranslate(string url, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语, string extra = null)
+        public async Task<GetImageTranslateResponse> GetImageTranslateAsync(string url, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语, string extra = null)
         {
             GetImageTranslateRequest getImageTranslateRequest = new GetImageTranslateRequest()
             {

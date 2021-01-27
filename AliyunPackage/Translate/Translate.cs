@@ -26,7 +26,7 @@ namespace AliyunPackage.Translate
         /// <param name="targetLanguage">译文语言</param>
         /// <param name="formatType">翻译文本的格式，html（ 网页格式。设置此参数将对待翻译文本以及翻译后文本按照html格式进行处理）、text（文本格式。设置此参数将对传入待翻译文本以及翻译后结果不做文本格式处理，统一按纯文本格式处理。</param>
         /// <returns></returns>
-        public async Task<TranslateGeneralResponse> TranslateGeneral(string sourceText, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语, string formatType = "text")
+        public async Task<TranslateGeneralResponse> TranslateGeneralAsync(string sourceText, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语, string formatType = "text")
         {
             TranslateGeneralRequest translateGeneralRequest = new TranslateGeneralRequest()
             {

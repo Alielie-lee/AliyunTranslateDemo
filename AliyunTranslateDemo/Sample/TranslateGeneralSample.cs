@@ -17,7 +17,7 @@ namespace AliyunTranslateDemo.Sample
             var client = new Translate("LTAI4FhcggVQT1JzUtjA8CDS", "zZHER19KvQx5DP0dllwcK2HWDyBYgg");
             Console.WriteLine("请输入需要翻译的内容");
             var key = Console.ReadLine();
-            var response = await client.TranslateGeneral(key);
+            var response = await client.TranslateGeneralAsync(key);
             if (response.Code == 200)
                 Console.WriteLine("翻译结果：" + response.Data.Translated);
             else

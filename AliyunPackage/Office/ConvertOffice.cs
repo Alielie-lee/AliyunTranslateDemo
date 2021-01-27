@@ -87,7 +87,7 @@ namespace AliyunPackage.Office
         /// <para>false：显示批注和修订。</para>
         /// </param>
         /// <returns></returns>
-        public async Task<ConvertOfficeFormatResponse> ConvertOfficeFormat(string project, string srcUri, string tgtUri, string tgtType, string srcType = null, long startPage = 1, long endPage = -1, long maxSheetRow = -1, long maxSheetCol = -1, long maxSheetCount = -1, bool sheetOnePage = false, string modelId = null, string password = null, string tgtFilePrefix = null, string tgtFileSuffix = null, string tgtFilePages = null, bool fitToPagesTall = false, bool fitToPagesWide = false, bool pdfVector = false, bool hidecomments = false)
+        public async Task<ConvertOfficeFormatResponse> ConvertOfficeFormatAsync(string project, string srcUri, string tgtUri, string tgtType, string srcType = null, long startPage = 1, long endPage = -1, long maxSheetRow = -1, long maxSheetCol = -1, long maxSheetCount = -1, bool sheetOnePage = false, string modelId = null, string password = null, string tgtFilePrefix = null, string tgtFileSuffix = null, string tgtFilePages = null, bool fitToPagesTall = false, bool fitToPagesWide = false, bool pdfVector = false, bool hidecomments = false)
         {
             var request = new ConvertOfficeFormatRequest()
             {
@@ -203,7 +203,7 @@ namespace AliyunPackage.Office
         /// </param>
         /// <param name="displayDpi">当源数据类型转换为JPG、PNG时，此参数才生效。图片分辨率，单位为PPI，取值范围为96 ~2048。</param>
         /// <returns></returns>
-        public async Task<CreateOfficeConversionTaskResponse> CreateOfficeConversionTask(string project, string srcUri, string tgtUri, string tgtType, string srcType = null, long startPage = 1, long endPage = -1, long maxSheetRow = -1, long maxSheetCol = -1, long maxSheetCount = -1, bool sheetOnePage = false, string modelId = null, string password = null, string tgtFilePrefix = null, string tgtFileSuffix = null, string tgtFilePages = null, bool fitToPagesTall = false, bool fitToPagesWide = false, bool pdfVector = false, bool hidecomments = false, string idempotentToken = null, int displayDpi = 0)
+        public async Task<CreateOfficeConversionTaskResponse> CreateOfficeConversionTaskAsync(string project, string srcUri, string tgtUri, string tgtType, string srcType = null, long startPage = 1, long endPage = -1, long maxSheetRow = -1, long maxSheetCol = -1, long maxSheetCount = -1, bool sheetOnePage = false, string modelId = null, string password = null, string tgtFilePrefix = null, string tgtFileSuffix = null, string tgtFilePages = null, bool fitToPagesTall = false, bool fitToPagesWide = false, bool pdfVector = false, bool hidecomments = false, string idempotentToken = null, int displayDpi = 0)
         {
             var request = new CreateOfficeConversionTaskRequest()
             {
@@ -253,7 +253,7 @@ namespace AliyunPackage.Office
         /// <param name="project">项目名称 从CreateOfficeConversionTask接口设置</param>
         /// <param name="taskId">任务id 从CreateOfficeConversionTask接口获取</param>
         /// <returns></returns>
-        public async Task<GetOfficeConversionTaskResponse> GetOfficeConversionTask(string project, string taskId)
+        public async Task<GetOfficeConversionTaskResponse> GetOfficeConversionTaskAsync(string project, string taskId)
         {
 
             var request = new GetOfficeConversionTaskRequest()

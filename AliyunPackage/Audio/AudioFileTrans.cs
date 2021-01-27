@@ -50,7 +50,7 @@ namespace AliyunPackage.Audio
         /// </summary>
         /// <param name="fileLink">音频地址</param>
         /// <returns></returns>
-        public async Task<CommonResponse> CreateAudioFileTransTask(string fileLink)
+        public async Task<CommonResponse> CreateAudioFileTransTaskAsync(string fileLink)
         {
             try
             {
@@ -94,7 +94,7 @@ namespace AliyunPackage.Audio
         /// </summary>
         /// <param name="taskId">任务id</param>
         /// <returns></returns>
-        public async Task<CommonResponse> GetAudioFileTransTask(string taskId)
+        public async Task<CommonResponse> GetAudioFileTransTaskAsync(string taskId)
         {
             try
             {

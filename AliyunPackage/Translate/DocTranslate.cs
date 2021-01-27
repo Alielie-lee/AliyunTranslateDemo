@@ -22,7 +22,7 @@ namespace AliyunPackage.Translate
         /// <param name="sourceLanguage">原文语言</param>
         /// <param name="targetLanguage">译文语言</param>
         /// <returns></returns>
-        public async Task<CreateDocTranslateTaskResponse> CreateDocTranslateTask(string fileUrl, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语)
+        public async Task<CreateDocTranslateTaskResponse> CreateDocTranslateTaskAsync(string fileUrl, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语)
         {
             CreateDocTranslateTaskRequest createDocTranslateTaskRequest = new CreateDocTranslateTaskRequest()
             {
@@ -39,7 +39,7 @@ namespace AliyunPackage.Translate
         /// </summary>
         /// <param name="taskId">任务id</param>
         /// <returns></returns>
-        public async Task<GetDocTranslateTaskResponse> GetDocTranslateTask(string taskId)
+        public async Task<GetDocTranslateTaskResponse> GetDocTranslateTaskAsync(string taskId)
         {
             GetDocTranslateTaskRequest getDocTranslateTaskRequest = new GetDocTranslateTaskRequest()
             {
