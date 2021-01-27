@@ -13,7 +13,7 @@ namespace AliyunTranslateDemo.Sample
     /// </summary>
     class ConvertOfficeSample : ISample
     {
-        ConvertOffice client = new ConvertOffice("LTAI4FhcggVQT1JzUtjA8CDS", "zZHER19KvQx5DP0dllwcK2HWDyBYgg", "cn-shanghai");
+        ConvertOffice client = new ConvertOffice("accesskey", "accesssecret", "cn-shanghai");
         public async Task Run()
         {
             Console.WriteLine("-----------文档转换示例------------");

@@ -14,7 +14,7 @@ namespace AliyunTranslateDemo.Sample
         public async Task Run()
         {
             Console.WriteLine("-----------通用翻译示例------------");
-            var client = new Translate("LTAI4FhcggVQT1JzUtjA8CDS", "zZHER19KvQx5DP0dllwcK2HWDyBYgg");
+            var client = new Translate("accesskey", "accesssecret");
             Console.WriteLine("请输入需要翻译的内容");
             var key = Console.ReadLine();
             var response = await client.TranslateGeneralAsync(key);

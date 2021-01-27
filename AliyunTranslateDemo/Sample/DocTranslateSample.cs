@@ -13,7 +13,7 @@ namespace AliyunTranslateDemo.Sample
     /// </summary>
     class DocTranslateSample : ISample
     {
-        DocTranslate client = new DocTranslate("LTAI4FhcggVQT1JzUtjA8CDS", "zZHER19KvQx5DP0dllwcK2HWDyBYgg");
+        DocTranslate client = new DocTranslate("accesskey", "accesssecret");
         public async Task Run()
         {
 

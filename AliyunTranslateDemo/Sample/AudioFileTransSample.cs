@@ -13,7 +13,7 @@ namespace AliyunTranslateDemo.Sample
     /// </summary>
     class AudioFileTransSample : ISample
     {
-        AudioFileTrans client = new AudioFileTrans("LTAI4FhcggVQT1JzUtjA8CDS", "zZHER19KvQx5DP0dllwcK2HWDyBYgg");
+        AudioFileTrans client = new AudioFileTrans("accesskey", "accesssecret");
         public async Task Run()
         {
             Console.WriteLine("-----------音频识别示例------------");//http://www.luyin.com/upload/zhongxuejiaoyujingxinjiaoyu1223007rj.mp3
