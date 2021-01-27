@@ -73,7 +73,7 @@ namespace AliyunPackage.Audio
                 obj[KEY_ENABLE_WORDS] = false;
                 string task = obj.ToString();
                 request.AddBodyParameters(KEY_TASK, task);
-                return await new Task<CommonResponse>(() =>
+                return await Task.Run(() =>
                 {
                     return Client.GetCommonResponse(request);
                 });
@@ -105,7 +105,7 @@ namespace AliyunPackage.Audio
                 getRequest.Product = PRODUCT;
                 getRequest.Method = MethodType.GET;
                 getRequest.AddQueryParameters(KEY_TASK_ID, taskId);
-                return await new Task<CommonResponse>(() =>
+                return await Task.Run(() =>
                 {
                     return Client.GetCommonResponse(getRequest);
                 });

@@ -114,8 +114,7 @@ namespace AliyunPackage.Office
             };
             try
             {
-
-                return await new Task<ConvertOfficeFormatResponse>(() =>
+                return await Task.Run(() =>
                 {
                     return Client.GetAcsResponse(request);
                 });
@@ -203,7 +202,7 @@ namespace AliyunPackage.Office
         /// </param>
         /// <param name="displayDpi">当源数据类型转换为JPG、PNG时，此参数才生效。图片分辨率，单位为PPI，取值范围为96 ~2048。</param>
         /// <returns></returns>
-        public async Task<CreateOfficeConversionTaskResponse> CreateOfficeConversionTaskAsync(string project, string srcUri, string tgtUri, string tgtType, string srcType = null, long startPage = 1, long endPage = -1, long maxSheetRow = -1, long maxSheetCol = -1, long maxSheetCount = -1, bool sheetOnePage = false, string modelId = null, string password = null, string tgtFilePrefix = null, string tgtFileSuffix = null, string tgtFilePages = null, bool fitToPagesTall = false, bool fitToPagesWide = false, bool pdfVector = false, bool hidecomments = false, string idempotentToken = null, int displayDpi = 0)
+        public async Task<CreateOfficeConversionTaskResponse> CreateOfficeConversionTaskAsync(string project, string srcUri, string tgtUri, string tgtType, string srcType = null, long startPage = 1, long endPage = -1, long maxSheetRow = -1, long maxSheetCol = -1, long maxSheetCount = -1, bool sheetOnePage = false, string modelId = null, string password = null, string tgtFilePrefix = null, string tgtFileSuffix = null, string tgtFilePages = null, bool fitToPagesTall = false, bool fitToPagesWide = false, bool pdfVector = false, bool hidecomments = false, string idempotentToken = null, int? displayDpi = null)
         {
             var request = new CreateOfficeConversionTaskRequest()
             {
@@ -232,7 +231,7 @@ namespace AliyunPackage.Office
             };
             try
             {
-                return await new Task<CreateOfficeConversionTaskResponse>(() =>
+                return await Task.Run(() =>
                 {
                     return Client.GetAcsResponse(request);
                 });
@@ -263,7 +262,7 @@ namespace AliyunPackage.Office
             };
             try
             {
-                return await new Task<GetOfficeConversionTaskResponse>(() =>
+                return await Task.Run(() =>
                 {
                     return Client.GetAcsResponse(request);
                 });

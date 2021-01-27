@@ -21,8 +21,9 @@ namespace AliyunPackage.Translate
         /// <param name="fileUrl">文档地址</param>
         /// <param name="sourceLanguage">原文语言</param>
         /// <param name="targetLanguage">译文语言</param>
+        /// <param name="callbackUrl">回调url</param>
         /// <returns></returns>
-        public async Task<CreateDocTranslateTaskResponse> CreateDocTranslateTaskAsync(string fileUrl, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语)
+        public async Task<CreateDocTranslateTaskResponse> CreateDocTranslateTaskAsync(string fileUrl, LanguageEnum sourceLanguage = LanguageEnum.中文, LanguageEnum targetLanguage = LanguageEnum.英语,string callbackUrl=null)
         {
             CreateDocTranslateTaskRequest createDocTranslateTaskRequest = new CreateDocTranslateTaskRequest()
             {
@@ -30,7 +31,7 @@ namespace AliyunPackage.Translate
                 SourceLanguage = sourceLanguage.GetDescription(),
                 TargetLanguage = targetLanguage.GetDescription(),
                 Scene = "general",
-                CallbackUrl = ""
+                CallbackUrl = callbackUrl
             };
             return await BaseClient.CreateDocTranslateTaskSimplyAsync(createDocTranslateTaskRequest);
         }
@@ -47,5 +48,6 @@ namespace AliyunPackage.Translate
             };
             return await BaseClient.GetDocTranslateTaskSimplyAsync(getDocTranslateTaskRequest);
         }
+
     }
 }
